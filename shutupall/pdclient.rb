@@ -13,7 +13,7 @@ class PDClient
     @client = Module.new do
       include HTTParty
       format :json
-      base_uri "http://#{subdomain}.pagerduty.com/api/v1"
+      base_uri "https://#{subdomain}.pagerduty.com/api/v1"
       basic_auth username, password
     end
   end
