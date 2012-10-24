@@ -26,7 +26,7 @@ class PDClient
     error = ret.error || ret.errors
     if error
       warn error.inspect
-      raise " Bad request"
+      raise "Bad request"
     end
     ret
   end
