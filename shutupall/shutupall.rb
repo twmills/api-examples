@@ -4,10 +4,10 @@ require "pdclient"
 require "active_support/time"
 
 def shutup_all_services(client, duration_in_minutes)
-  soon = Time.now + 10.seconds
+  now = Time.now
   client.create_maintenance_window client.services, :description => "Shutting up for #{duration_in_minutes} minutes",
-                                                    :start_time => soon,
-                                                    :end_time => soon + duration_in_minutes.minutes
+                                                    :start_time => now,
+                                                    :end_time => now + duration_in_minutes.minutes
 end
 
 def doit
