@@ -1,7 +1,7 @@
-PagerDuty Api Samples
+PagerDuty API Samples
 =========
 
-Usage samples of [Pagerduty Api](http://developer.pagerduty.com/)
+Example usage of the [PagerDuty API](http://developer.pagerduty.com/)
 
 Meta
 ----
