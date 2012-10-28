@@ -1,11 +1,28 @@
-PagerDuty API Samples
-=========
+PagerDuty API Usage
+===================
 
-Example usage of the [PagerDuty API](http://developer.pagerduty.com/)
+* PagerDuty API: http://developer.pagerduty.com/
 
-Meta
-----
+## Description
 
-Released under the MIT License: http://www.opensource.org/licenses/mit-license.php
 
-https://github.com/PagerDuty/api-examples
+This project contains example usage of the [PagerDuty API](http://developer.pagerduty.com/)
+
+
+## Installation
+
+    $ git clone git://github.com/PagerDuty/api-examples.git
+    $ cd api-examples/shutupall
+    $ bundle install
+
+## Documentation
+
+
+### shutupall
+create a PagerDuty Maintenance Window with all PagerDuty Services in the account
+
+    $ bundle exec ruby shutupall.rb duration_in_minutes subdomain email password
+
+## License
+
+See LICENSE file.

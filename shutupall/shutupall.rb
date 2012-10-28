@@ -11,10 +11,10 @@ def shutup_all_services(client, duration_in_minutes)
 end
 
 def doit
-  return puts "Usage: %s duration_in_minutes subdomain username password" % __FILE__ if ARGV.length != 4
-  duration_in_minutes, subdomain, username, password = ARGV
+  return puts "Usage: %s duration_in_minutes subdomain email password" % __FILE__ if ARGV.length != 4
+  duration_in_minutes, subdomain, email, password = ARGV
   puts "Shutting up all services for #{subdomain}"
-  shutup_all_services(client = PDClient.new(subdomain, username, password), duration_in_minutes.to_i)
+  shutup_all_services(client = PDClient.new(subdomain, email, password), duration_in_minutes.to_i)
   puts "All services are now quiet..."
 end
 
